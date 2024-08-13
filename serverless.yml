@@ -1,0 +1,19 @@
+service: stonkbot
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: us-west-2
+
+functions:
+  stonkBotFunction:
+    handler: app.handler
+    events:
+      - http:
+          path: stonk
+          method: post
+    environment:
+      REGION: us-west-2
+
+plugins:
+  - serverless-offline

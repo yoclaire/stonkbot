@@ -11,8 +11,8 @@
   "description": "",
   "dependencies": {
     "aws-sdk": "^2.1673.0",
-    "axios": "^1.7.3",
-    "express": "^4.19.2",
+    "axios": "^1.7.4",
+    "express": "^4.20.0",
     "node-schedule": "^2.1.1",
     "serverless-http": "^3.2.0"
   }
